@@ -29,6 +29,8 @@ export class AppComponent {
   public isPaused6:boolean = true;
   public isPaused7:boolean = true;
   public isPaused8:boolean = true;
+
+  public isLooping:boolean = true;
   
 
   
@@ -63,12 +65,30 @@ export class AppComponent {
   loop() {
 
     for (let index = 0; index < this.audios.length; index++) {
+      console.log(this.isLooping);
+      
+      if(this.isLooping){
       const song = this.audios[index];
       song.loop = true;
       console.log(song);
-
-
+      }
+      else if(!this.isLooping){
+        console.log(this.isLooping);
+        const song = this.audios[index];
+        song.loop = false;
+      }
     }
+    
+    if(this.isLooping){
+      this.isLooping = false;
+    }else if(!this.isLooping){
+      this.isLooping = true;
+    }
+    console.log("************" + this.isLooping);
+    
+
+
+    
 
   }
 

@@ -1,0 +1,15 @@
+#area{
+    height: 400px ;
+    width: 500px;
+    margin: 0;
+    position: relative;
+    background-color: white;
+    
+}
+
+.zones{
+    border: 1px solid rgba(0, 0, 0, 0.205);
+    height: 50px;
+    width: 500px;
+    margin: 0;
+}

@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "moveo"
+    }
+  },
+  "defaultProject": "moveo",
+  "cli": {
+    "analytics": "d646715d-c364-4240-8173-3ace9e9c2c20"
+  }
 }

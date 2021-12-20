@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { ToggleButtonComponent } from './components/toggle-button/toggle-button.component';
 import { FormsModule } from '@angular/forms';
 import { CursorAreaComponent } from './components/cursor-area/cursor-area.component';
+import { CursorLineComponent } from './components/cursor-line/cursor-line.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToggleButtonComponent,
-    CursorAreaComponent
+    CursorAreaComponent,
+    CursorLineComponent
   ],
   imports: [
     BrowserModule,

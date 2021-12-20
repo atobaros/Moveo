@@ -40,6 +40,7 @@
     </div>
   </div>
   <div id="cursorfield">
-    <app-cursor-area></app-cursor-area>
+    <app-cursor-area class="cursorArea"> </app-cursor-area>
+    <app-cursor-line [ngStyle]="{'left':pixels}" class="cursorLine"></app-cursor-line>
   </div>
 </div>

@@ -4,37 +4,47 @@
     margin: 0;
     position: relative;
     background-color: white;
+   
     
 }
 
 .zones{
-    border: 1px solid rgba(0, 0, 0, 0.205);
+    /* border: 1px solid rgba(0, 0, 0, 0.205); */
     height: 50px;
     width: 500px;
     margin: 0;
 }
 
-/* #zone1{
-    background-color: rgba(0, 128, 0, 0.171);
+#zone1{
+    background-color: rgba(236, 233, 233, 0.76);
+    border-top: 5px solid green ;
 }
 #zone2{
-    background-color: rgba(0, 0, 255, 0.26);
+    background-color: rgba(236, 233, 233, 0.76);
+    border-top: 5px solid blue;
 }
 #zone3{
-    background-color: rgba(128, 0, 128, 0.322);
+    background-color: rgba(236, 233, 233, 0.76);
+    border-top: 5px solid purple;
 }
 #zone4{
-    background-color: rgba(255, 0, 0, 0.247);
+    background-color: rgba(236, 233, 233, 0.76); 
+    border-top: 5px solid red;
 }
 #zone5{
-    background-color: rgba(255, 192, 203, 0.445);
+    background-color: rgba(236, 233, 233, 0.76); 
+    border-top: 5px solid pink;
 }
 #zone6{
-    background-color: rgba(255, 166, 0, 0.336);
+    background-color: rgba(236, 233, 233, 0.76); 
+    border-top: 5px solid orange;
 }
 #zone7{
-    background-color: rgba(255, 255, 0, 0.171);
+    background-color: rgba(236, 233, 233, 0.76); 
+    border-top: 5px solid rgb(202, 202, 3);
 }
 #zone8{
-    background-color: rgba(0, 0, 0, 0.473);
-} */
+    background-color: rgba(236, 233, 233, 0.76); 
+    border-top: 5px solid black;
+}
+

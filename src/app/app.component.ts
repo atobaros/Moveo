@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -10,7 +11,7 @@ export class AppComponent implements OnInit {
 
 
   ngOnInit(): void {
-    
+
   }
 
   title = 'moveo';
@@ -19,7 +20,7 @@ export class AppComponent implements OnInit {
   public audio1 = new Audio('../assets/breakbeats.mp3');
   public audio2 = new Audio('../assets/funk.mp3');
   public audio3 = new Audio('../assets/guitar.mp3');
-  public audio4 = new Audio('../assets/MazePolitics.mp3');
+  public audio4 = new Audio('../assets/Warwick.mp3');
   public audio5 = new Audio('../assets/PAS3GROOVE.mp3');
   public audio6 = new Audio('../assets/SilentSt.mp3');
   public audio7 = new Audio('../assets/StompySlosh.mp3');
@@ -41,25 +42,29 @@ export class AppComponent implements OnInit {
 
   public isLooping: boolean = true;
 
-  public value: number = 10;
-  public pixels: string = this.value + "px";
+  public value:number = 0;
+  public pixels:string = this.value + "px";
+  
+  
 
 
 
 
-
+  /* This method plays all the audios simultaneously */
   play() {
-    
+    this.move();
+
     for (let index = 0; index < this.audios.length; index++) {
       const song = this.audios[index];
       song.load();
       song.play();
-      // this.move();
+
     }
 
 
   }
 
+  /* This method stops all the audios at the same time */
   stop() {
 
     for (let index = 0; index < this.audios.length; index++) {
@@ -74,6 +79,7 @@ export class AppComponent implements OnInit {
 
   }
 
+  /* When the method is activaded the songs keep playing in a loop  */
   loop() {
 
     for (let index = 0; index < this.audios.length; index++) {
@@ -104,6 +110,7 @@ export class AppComponent implements OnInit {
 
   }
 
+  /* Reference for the mute button of the first channel  */
   muttingAudio1(event: Event) {
     let firstoggle = document.getElementById("firstToggle");
     console.dir(firstoggle);
@@ -112,23 +119,22 @@ export class AppComponent implements OnInit {
     if (firstoggle.id === "firstToggle") {
       if (!this.isPaused1) {
         this.audio1.volume = 1;
-        // firstoggle.innerHTML = '<span class="glyphicon glyphicon-volume-up"></span>';
         firstoggle.style.backgroundColor = 'rgba(236, 233, 233, 0.10)';
         this.isPaused1 = true;
         console.log("audio1 is playing");
       } else if (this.isPaused1) {
         this.audio1.volume = 0;
-        // firstoggle.innerHTML = '<span class="glyphicon glyphicon-volume-off"></span>';
         firstoggle.style.backgroundColor = 'red';
         this.isPaused1 = false;
         console.log("audio1 has been muted");
       } else {
-        console.log("jueputa");
+        console.log("its not working");
 
       }
     }
   }
 
+  /* Reference for the mute button of the second channel  */
   muttingAudio2(event: Event) {
     let secondtoggle = document.getElementById("secondToggle");
     console.dir(secondtoggle);
@@ -145,13 +151,14 @@ export class AppComponent implements OnInit {
         this.isPaused2 = false;
         console.log("audio2 has been muted");
       } else {
-        console.log("jueputa");
+        console.log("its not working");
 
       }
 
     }
   }
 
+  /* Reference for the mute button of the third channel  */
   muttingAudio3(event: Event) {
     let thirdtoggle = document.getElementById("thirdToggle");
     console.dir(thirdtoggle);
@@ -168,7 +175,7 @@ export class AppComponent implements OnInit {
         this.isPaused3 = false;
         console.log("audio3 has been muted");
       } else {
-        console.log("jueputa");
+        console.log("its not working");
 
       }
 
@@ -177,6 +184,7 @@ export class AppComponent implements OnInit {
 
   }
 
+  /* Reference for the mute button of the fourth channel  */
   muttingAudio4(event: Event) {
     let fourthtoggle = document.getElementById("fourthToggle");
     console.dir(fourthtoggle);
@@ -193,13 +201,14 @@ export class AppComponent implements OnInit {
         this.isPaused4 = false;
         console.log("audio4 has been muted");
       } else {
-        console.log("jueputa");
+        console.log("its not working");
 
       }
 
     }
   }
 
+  /* Reference for the mute button of the fifth channel  */
   muttingAudio5(event: Event) {
     let fifthtoggle = document.getElementById("fifthToggle");
     console.dir(fifthtoggle);
@@ -216,13 +225,14 @@ export class AppComponent implements OnInit {
         this.isPaused5 = false;
         console.log("audio5 has been muted");
       } else {
-        console.log("jueputa");
+        console.log("its not working");
 
       }
 
     }
   }
 
+  /* Reference for the mute button of the sixth channel  */
   muttingAudio6(event: Event) {
     let sixthtoggle = document.getElementById("sixthToggle");
     console.dir(sixthtoggle);
@@ -239,13 +249,14 @@ export class AppComponent implements OnInit {
         this.isPaused6 = false;
         console.log("audio6 has been muted");
       } else {
-        console.log("jueputa");
+        console.log("its not working");
 
       }
 
     }
   }
 
+  /* Reference for the mute button of the seventh channel  */
   muttingAudio7(event: Event) {
     let seventhtoggle = document.getElementById("seventhToggle");
     console.dir(seventhtoggle);
@@ -262,7 +273,7 @@ export class AppComponent implements OnInit {
         this.isPaused7 = false;
         console.log("audio7 has been muted");
       } else {
-        console.log("jueputa");
+        console.log("its not working");
 
       }
 
@@ -270,6 +281,7 @@ export class AppComponent implements OnInit {
   }
 
 
+  /* Reference for the mute button of the eighth channel  */
   muttingAudio8(event: Event) {
     let eighthtoggle = document.getElementById("eighthToggle");
     console.dir(eighthtoggle);
@@ -286,26 +298,34 @@ export class AppComponent implements OnInit {
         this.isPaused8 = false;
         console.log("audio8 has been muted");
       } else {
-        console.log("jueputa");
+        console.log("its not working");
 
       }
 
     }
   }
 
-   move(){
+  /* This method moves the cursor */
+  move() {
 
-      this.value = this.value + 62.5;
-      this.pixels = this.value + 'px';
-      console.log(this.value);
-      
-      console.log(this.pixels);
+    this.value = this.value + 62.5;
+    this.pixels = this.value + "px";
     
+    var audio11 = this.audio1;
+    
+    audio11.addEventListener('timeupdate',(currentTime)=> {
+
+     var duration = audio11.duration;
+     var current = audio11.currentTime;
+     console.log(duration);
+     console.log(current + "***");
      
-   }
-
   
+      
+    })
+    
+    
 
-
-
+  }
 }
+

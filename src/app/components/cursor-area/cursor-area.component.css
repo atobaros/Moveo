@@ -9,7 +9,7 @@
 }
 
 .zones{
-    /* border: 1px solid rgba(0, 0, 0, 0.205); */
+    
     height: 50px;
     width: 500px;
     margin: 0;
@@ -17,34 +17,34 @@
 
 #zone1{
     background-color: rgba(236, 233, 233, 0.76);
-    border-top: 5px solid green ;
+    border-top: 5px dashed green ;
 }
 #zone2{
     background-color: rgba(236, 233, 233, 0.76);
-    border-top: 5px solid blue;
+    border-top: 5px dashed blue;
 }
 #zone3{
     background-color: rgba(236, 233, 233, 0.76);
-    border-top: 5px solid purple;
+    border-top: 5px dashed purple;
 }
 #zone4{
     background-color: rgba(236, 233, 233, 0.76); 
-    border-top: 5px solid red;
+    border-top: 5px dashed red;
 }
 #zone5{
     background-color: rgba(236, 233, 233, 0.76); 
-    border-top: 5px solid pink;
+    border-top: 5px dashed pink;
 }
 #zone6{
     background-color: rgba(236, 233, 233, 0.76); 
-    border-top: 5px solid orange;
+    border-top: 5px dashed orange;
 }
 #zone7{
     background-color: rgba(236, 233, 233, 0.76); 
-    border-top: 5px solid rgb(202, 202, 3);
+    border-top: 5px dashed rgb(202, 202, 3);
 }
 #zone8{
     background-color: rgba(236, 233, 233, 0.76); 
-    border-top: 5px solid black;
+    border-top: 5px dashed black;
 }
 
